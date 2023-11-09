@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #337449;
+    font-weight: 700;
+    font-family: 'KoHo', sans-serif;
+    font-size: 2.5rem;
+    opacity: 0.7;
+}
+
+h3{
+    color: #337449;
+    font-weight: 700;
+    font-family: 'KoHo', sans-serif;
+    opacity: 0.8;
+
+}
+
+h2{
+    color: #337449;
+    font-weight: 500;
+    font-family: 'KoHo', sans-serif;
+    opacity: 0.8;
+}
+
+p{
+    color: #337449;
+    font-weight: 400;
+    font-family: 'KoHo', sans-serif;
+    opacity: 0.8;
+}
+
+main{
+    min-height: 100vh;
+    background-image: linear-gradient(to right top,#d2e69c,#8fd9a8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass{
+    /* background: white; */
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.5),rgba(255,255,255,0.2));
+    /* border: 1px solid white; */
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(1.5rem);
+    /* to get the blur effect on the circles */
+
+
+    /* ppl get excited about this for some reason */
+
+    display: flex;
+}
+
+.circle1,.circle2{
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 0;
+    border-radius: 100%;
+}
+
+.circle1{
+    top: 4%;
+    right: 10%;
+}
+
+.circle2{
+    top: 57%;
+    left: 10%;
+}
+
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* we add flex because then we can center it  */
+
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.5),rgba(255,255,255,0.2));
+    border-radius: 2rem;
+}
+.link{
+    display: flex;
+    margin: 0.5rem 0.5rem;
+    align-items: center;
+}  
+
+.link h2{
+    padding: 0.5rem 0.5rem;
+}
+
+.pro{
+    background-image: linear-gradient(to right top,#d2e69c,#8fd9a8);
+    border-radius: 1rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 0;
+    width: 85%;
+}
+.pro p{
+    color: white;
+    font-weight: 700;
+    width: 40%;
+}
+
+.games{
+    flex: 2;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; */
+}
+
+.avatar{
+    width: 4rem;
+    border-radius: 100%;
+}
+
+.fa-twitch{
+    color: #8fd9a8;
+}
+
+.fa-steam{
+    color: #8fd9a8;
+}
+
+.fa-gamepad{
+    color: #8fd9a8;
+}
+.fa-book{
+    color: #8fd9a8;
+}
+
+.controller{
+    width: 5rem;
+}
+
+.card-images{
+    width: 4rem;
+}
+
+/* GAMES  */
+
+.status{
+    margin-bottom: 3rem;
+}
+
+.status input{
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.5),rgba(255,255,255,0.2));
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+
+}
+
+.games{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5rem;
+}
+
+.card{
+    display: flex;
+    background: linear-gradient(to left top,rgba(255,255,255,0.8),rgba(255,255,255,0.5)
+    );
+    width: 90%;
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px rgba(122,122,122,0.3);
+    justify-content: space-between;
+}
+
+.percentage{
+    font-weight: 700;
+}
+.top-card{
+    margin-top: 0;
+}
+
+.progress{
+    background-image: linear-gradient(to right top,#d2e69c,#8fd9a8);
+    width: 100%;
+    height: 25%;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after{
+    content:"";
+    width: 90%;
+    height: 100%;
+    background: rgba(236,236,236);
+    position: absolute;
+    left: 60%;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percentage{
+    background: linear-gradient(to right top,#d2e69c,#8fd9a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* making the text background as specified and then making the text transparent so that only the background is visible */
+}
